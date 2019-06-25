@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=EinfacheAufgabeController
+comment1.params=zahl1\ zahl2\ s
+comment1.target=void\ neueAufgabe(int,\ int,\ java.lang.String)
+comment1.text=\r\n\ Setzt\ den\ Aufgabentext\r\n
+comment2.params=
+comment2.target=int\ getAntwort()
+comment2.text=\r\n\ Holt\ die\ eingegebene\ Antwort\r\n
+numComments=3

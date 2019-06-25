@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Aufgabe
+comment1.params=
+comment1.target=void\ richtigeLoesungAnzeigen()
+comment2.params=
+comment2.target=boolean\ loesungUeberpruefen()
+comment3.params=
+comment3.target=javafx.scene.layout.Pane\ darstellungErstellen()
+comment4.params=
+comment4.target=void\ neu()
+comment5.params=
+comment5.target=int\ getPunkte()
+numComments=6

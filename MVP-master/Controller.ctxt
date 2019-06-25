@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Controller
+comment1.params=event
+comment1.target=void\ buttonGeklickt(javafx.event.ActionEvent)
+comment1.text=\r\n\ Wenn\ auf\ den\ Button\ geklickt\ wurde,\ wird\ diese\ Methode\ aufgerufen\r\n\ Je\ nach\ Zustand\ wird\ etwas\ anderes\ auf\ dem\ Button\ angezeigt\ und\ tut\r\n\ der\ Button\ auch\ etwas\ anderes\r\n
+comment2.params=
+comment2.target=void\ initialize()
+comment2.text=\r\n\ Diese\ Methode\ wird\ aufgerufen,\ wenn\ alle\ Label\ und\ Button\ vom\ Loader\ erstellt\ worden\ sind\r\n
+numComments=3
