@@ -36,7 +36,10 @@ public class Division extends Aufgabe
     /*
      * Diese Methode wird noch nicht verwendet
      */
-    public  void richtigeLoesungAnzeigen(){}
+  public  double richtigeLoesungAnzeigen()
+    {
+    return zahl1;
+    }
 
     /*
      * Erstellt eine neue Aufgabe
