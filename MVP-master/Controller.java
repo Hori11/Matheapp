@@ -59,7 +59,7 @@ public class Controller
                 else
                 {
                     // Falsch
-                    lblErgebnis.setText("Leider falsch");
+                    lblErgebnis.setText("Richtige Lösung: " + a.richtigeLoesungAnzeigen());
                 }
                 // Der Zustand wird auf Antwort getippt gesetzt
                 zustand = 1;

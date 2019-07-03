@@ -36,7 +36,10 @@ public class Multiplikation extends Aufgabe
     /*
      * Diese Methode wird noch nicht verwendet
      */
-    public  void richtigeLoesungAnzeigen(){}
+    public  double richtigeLoesungAnzeigen()
+    {
+        return zahl1*zahl2;
+    }
 
     /*
      * Erstellt eine neue Aufgabe
