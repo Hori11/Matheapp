@@ -46,7 +46,9 @@
                   <Font size="18.0" />
                </font>
             </Button>
+
             <Label fx:id="lblErgebnis" layoutX="15.0" layoutY="17.0" prefHeight="35.0" prefWidth="454.0" text="Richtig / Falsch" textFill="#ff4b05" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0">
+
                <font>
                   <Font size="24.0" />
                </font>

@@ -83,7 +83,23 @@ public class Controller
     @FXML 
     void initialize() {      
         // Erstellt eine neue Einfache Aufgabe
+        int zufall = (int)(Math.random()*4);
+        if (zufall == 0)
+        {
         a = new EinfacheAufgabe();
+    }
+     else if (zufall ==1)
+     {
+        a = new SubtraktionEinfacheAufgabe();
+    }
+    else if (zufall ==2)
+    {
+        a = new Multiplikation();
+    }
+    else if (zufall ==3 )
+    {
+        a = new Division();
+    }
         // fügt die Darstellung der einfachen Aufgabe in die Oberfläche ein
         inhalt.getChildren().add(a.darstellungErstellen());
         // Punktstand am Anfang ist 0
