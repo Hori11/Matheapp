@@ -11,7 +11,7 @@ public class Controller
     // Anzeige der erreichten Punkte
     @FXML 
     private Label lblPunkte; 
-    
+
     // Der Button Prüfen oder Weiter
     @FXML
     private Button button;
@@ -44,7 +44,7 @@ public class Controller
         switch (zustand)
         {
             case 0: { // Zustand Aufgabe gestellt
-                
+
                 // Es wird überprüft, ob die richtige Lösung eingegeben wurde
 
                 boolean ergebnis = a.loesungUeberpruefen();
@@ -59,7 +59,7 @@ public class Controller
                 else
                 {
                     // Falsch
-                    lblErgebnis.setText("Richtige Lösung: " + a.richtigeLoesungAnzeigen());
+                    lblErgebnis.setText("Leider falsch");
                 }
                 // Der Zustand wird auf Antwort getippt gesetzt
                 zustand = 1;
@@ -67,8 +67,30 @@ public class Controller
 
             } break;
 
-            case 1: {  // Zustand Antwort getippt               
-                a.neu(); // Eine neue Aufgabe wird angezeigt
+            case 1: {
+                int zufall = (int)(Math.random()*4);
+                if (zufall == 0)
+                {
+                    a = new EinfacheAufgabe();
+                }
+                else if (zufall ==1)
+                {
+                    a = new SubtraktionEinfacheAufgabe();
+                }
+                else if (zufall ==2)
+                {
+                    a = new Multiplikation();
+                }
+                else if (zufall ==3 )
+                {
+                    a = new Division();
+                }
+                // Zustand Antwort getippt               
+               // a.neu(); // Eine neue Aufgabe wird angezeigt
+                // fügt die Darstellung der einfachen Aufgabe in die Oberfläche ein
+                inhalt.getChildren().clear();
+                inhalt.getChildren().add(a.darstellungErstellen());
+
                 button.setText("Prüfen!"); 
                 lblErgebnis.setText("");
                 zustand = 0; // Zustand wird wieder auf Aufgabe gestellt gesetzt
@@ -76,30 +98,31 @@ public class Controller
 
         }
     }
+
     /*
      * Diese Methode wird aufgerufen, wenn alle Label und Button vom Loader erstellt worden sind
      */
-  
+
     @FXML 
     void initialize() {      
         // Erstellt eine neue Einfache Aufgabe
         int zufall = (int)(Math.random()*4);
         if (zufall == 0)
         {
-        a = new EinfacheAufgabe();
-    }
-     else if (zufall ==1)
-     {
-        a = new SubtraktionEinfacheAufgabe();
-    }
-    else if (zufall ==2)
-    {
-        a = new Multiplikation();
-    }
-    else if (zufall ==3 )
-    {
-        a = new Division();
-    }
+            a = new EinfacheAufgabe();
+        }
+        else if (zufall ==1)
+        {
+            a = new SubtraktionEinfacheAufgabe();
+        }
+        else if (zufall ==2)
+        {
+            a = new Multiplikation();
+        }
+        else if (zufall ==3 )
+        {
+            a = new Division();
+        }
         // fügt die Darstellung der einfachen Aufgabe in die Oberfläche ein
         inhalt.getChildren().add(a.darstellungErstellen());
         // Punktstand am Anfang ist 0
