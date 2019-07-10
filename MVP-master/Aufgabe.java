@@ -5,7 +5,7 @@ public abstract class Aufgabe
     protected int punkte;
 
     // Methoden
-    public abstract double richtigeLoesungAnzeigen();
+    public abstract void richtigeLoesungAnzeigen();
 
     public abstract boolean loesungUeberpruefen();
 

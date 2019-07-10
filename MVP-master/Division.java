@@ -13,7 +13,7 @@ public class Division extends Aufgabe
     // Die beiden Zahlen
     private int zahl1;
     private int zahl2;
-    private int zahl3;
+
     // Zufallsgenerator
     private Random random; 
 
@@ -36,10 +36,7 @@ public class Division extends Aufgabe
     /*
      * Diese Methode wird noch nicht verwendet
      */
-  public  double richtigeLoesungAnzeigen()
-    {
-    return zahl1;
-    }
+    public  void richtigeLoesungAnzeigen(){}
 
     /*
      * Erstellt eine neue Aufgabe
@@ -48,9 +45,8 @@ public class Division extends Aufgabe
     public void neu()
     {
         zahl1 = random.nextInt(100);
-        zahl2 = random.nextInt(100);
-        zahl3 = zahl1 * zahl2;
-        controller.neueAufgabe(zahl3, zahl2, ":");
+        zahl2 = random.nextInt(10);
+        controller.neueAufgabe(zahl1, zahl2, ":");
     }
 
     /*

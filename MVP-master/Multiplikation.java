@@ -25,7 +25,7 @@ public class Multiplikation extends Aufgabe
     {
         super(); //Aufruf des Konstruktors der Superklasse, könnte hier auch weggelassen werden
 
-        punkte = 4;  // Soviele Punkte ist diese einfache Aufgabe wert
+        punkte = 3;  // Soviele Punkte ist diese einfache Aufgabe wert
 
         // Erstellt ein Objekt für neue Zufallszahlen
         random = new Random();     
@@ -36,10 +36,7 @@ public class Multiplikation extends Aufgabe
     /*
      * Diese Methode wird noch nicht verwendet
      */
-    public  double richtigeLoesungAnzeigen()
-    {
-        return zahl1*zahl2;
-    }
+    public  void richtigeLoesungAnzeigen(){}
 
     /*
      * Erstellt eine neue Aufgabe
@@ -47,8 +44,8 @@ public class Multiplikation extends Aufgabe
      */
     public void neu()
     {
-        zahl1 = random.nextInt(100);
-        zahl2 = random.nextInt(100);
+        zahl1 = random.nextInt(10);
+        zahl2 = random.nextInt(10);
         controller.neueAufgabe(zahl1, zahl2, "*");
     }
 

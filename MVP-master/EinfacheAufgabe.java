@@ -25,7 +25,7 @@ public class EinfacheAufgabe extends Aufgabe
     {
         super(); //Aufruf des Konstruktors der Superklasse, könnte hier auch weggelassen werden
 
-        punkte = 4;  // Soviele Punkte ist diese einfache Aufgabe wert
+        punkte = 1;  // Soviele Punkte ist diese einfache Aufgabe wert
 
         // Erstellt ein Objekt für neue Zufallszahlen
         random = new Random();     
@@ -36,10 +36,7 @@ public class EinfacheAufgabe extends Aufgabe
     /*
      * Diese Methode wird noch nicht verwendet
      */
-    public  double richtigeLoesungAnzeigen()
-    {
-        return zahl1+zahl2;
-    }
+    public  void richtigeLoesungAnzeigen(){}
 
     /*
      * Erstellt eine neue Aufgabe
