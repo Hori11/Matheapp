@@ -38,7 +38,7 @@ public class SubtraktionEinfacheAufgabe extends Aufgabe
      */
     public  int richtigeLoesungAnzeigen()
     {
-        return zahl1-zahl2;
+    return zahl1-zahl2;
     }
 
     /*
@@ -51,10 +51,12 @@ public class SubtraktionEinfacheAufgabe extends Aufgabe
         zahl2 = random.nextInt(100);
         while(zahl1 - zahl2 < 0)
         {
-            zahl1 = random.nextInt(100);
-            zahl2 = random.nextInt(100);
+          zahl1 = random.nextInt(100);  
+          zahl2 = random.nextInt(100);  
         }
         controller.neueAufgabe(zahl1, zahl2, "-");
+        int x = zahl1 - zahl2;
+        System.out.println("Lösung: " + x);
     }
 
     /*

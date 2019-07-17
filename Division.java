@@ -36,9 +36,9 @@ public class Division extends Aufgabe
     /*
      * Diese Methode wird noch nicht verwendet
      */
-    public  int richtigeLoesungAnzeigen()
+  public  int richtigeLoesungAnzeigen()
     {
-        return zahl1;
+    return zahl1;
     }
 
     /*
@@ -47,19 +47,19 @@ public class Division extends Aufgabe
      */
     public void neu()
     {
-        zahl1 = random.nextInt(15);
-        System.out.println("zahl1 " + zahl1);
+        zahl1 = random.nextInt(20);
         zahl2 = random.nextInt(10);
         while(zahl1 == 0)
         {
            zahl1 = random.nextInt(15); 
         }
-        while(zahl2 == 0)
+          while(zahl2 == 0)
         {
            zahl2 = random.nextInt(10); 
         }
         zahl3 = zahl1 * zahl2;
         controller.neueAufgabe(zahl3, zahl2, ":");
+        System.out.println("Lösung: " + zahl1);
     }
 
     /*
@@ -67,7 +67,6 @@ public class Division extends Aufgabe
      */
     public boolean loesungUeberpruefen(){
         int antwort = controller.getAntwort();
-        System.out.println(" antwort : " + antwort);
         if (zahl3 / zahl2 == antwort)
         {
             return true;
