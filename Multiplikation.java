@@ -50,6 +50,7 @@ public class Multiplikation extends Aufgabe
         zahl1 = random.nextInt(100);
         zahl2 = random.nextInt(100);
         controller.neueAufgabe(zahl1, zahl2, "*");
+        System.out.println("Lösung: " + zahl1*zahl2);
     }
 
     /*
